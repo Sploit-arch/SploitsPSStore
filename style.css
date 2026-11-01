@@ -463,7 +463,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Links do Rodapé (Home, Desbloqueio, GitHub) */
+/* Links do Rodapé (Home, Jailbreak, GitHub) */
 .footer-links {
     display: flex;
     gap: 30px; /* Mais espaço entre os links */
@@ -528,4 +528,132 @@ body {
     }
 }
 
-/* O conteúdo principal vai crescer para empurrar o footer */
+/* The main content expands to push the footer down */
+
+/* =========================================
+   SPLOIT'S PS STORE — XMB PREMIUM THEME
+   ========================================= */
+:root {
+  --bg-main: #030b1b;
+  --bg-header: rgba(4, 12, 30, .88);
+  --bg-card: rgba(10, 28, 55, .88);
+  --bg-panel: rgba(12, 38, 72, .92);
+  --ps-blue: #168cff;
+  --steam-blue: #69d4ff;
+  --text-light: #e8f4ff;
+  --text-muted: #9bb4d0;
+}
+html { background: #030b1b; }
+body {
+  background: transparent;
+  color: var(--text-light);
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: -3%;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(2,8,23,.42), rgba(2,8,23,.76)), url("src/assets/xmb-waves.svg") center center / cover no-repeat;
+  animation: xmbFloat 28s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 18% 15%, rgba(0,145,255,.16), transparent 38%),
+    radial-gradient(ellipse at 85% 72%, rgba(97,75,255,.13), transparent 40%),
+    linear-gradient(90deg, rgba(1,7,20,.18), transparent 50%, rgba(1,7,20,.2));
+}
+@keyframes xmbFloat {
+  from { transform: scale(1.02) translate3d(-.5%, 0, 0); }
+  to { transform: scale(1.09) translate3d(.8%, -1%, 0); }
+}
+.hub-header {
+  background: rgba(3, 10, 26, .82);
+  border-bottom: 1px solid rgba(92,190,255,.22);
+  box-shadow: 0 12px 40px rgba(0,0,0,.42), 0 1px 0 rgba(87,183,255,.12);
+  backdrop-filter: blur(22px);
+}
+.logo, .footer-logo {
+  letter-spacing: 2.4px;
+  text-shadow: 0 0 22px rgba(41,166,255,.36);
+}
+.nav-plataformas a { transition: color .22s ease, text-shadow .22s ease, background .22s ease; }
+.nav-plataformas a:hover, .nav-plataformas a.active {
+  color: #fff;
+  text-shadow: 0 0 14px rgba(76,196,255,.8);
+  background: linear-gradient(180deg, rgba(40,154,255,.16), rgba(40,154,255,.025));
+  border-bottom-color: #54caff;
+}
+.btn-jb {
+  background: linear-gradient(120deg, #0879ed, #13b8e9 55%, #6559ef);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(0,132,255,.32);
+}
+.btn-jb:hover { box-shadow: 0 8px 30px rgba(0,162,255,.5); }
+.hub-main { position: relative; z-index: 1; }
+.search-box { margin-top: 2px; margin-bottom: 48px; }
+.search-input {
+  background: rgba(1,8,22,.78);
+  border: 1px solid rgba(91,190,255,.36);
+  box-shadow: 0 10px 35px rgba(0,0,0,.22), inset 0 0 18px rgba(0,105,190,.08);
+  backdrop-filter: blur(12px);
+}
+.search-input:focus { border-color: #4bc9ff; box-shadow: 0 0 0 3px rgba(49,176,255,.12), 0 0 28px rgba(0,144,255,.2); }
+.prateleira {
+  padding: 18px 20px 8px;
+  margin: 0 0 34px;
+  border: 1px solid rgba(106,190,255,.12);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(5,19,43,.52), rgba(8,30,61,.28));
+  box-shadow: 0 16px 44px rgba(0,0,0,.16);
+  backdrop-filter: blur(8px);
+}
+.prateleira-header { border-bottom-color: rgba(111,197,255,.18); }
+.prateleira-header h2 { text-shadow: 0 0 18px rgba(47,159,255,.24); }
+.prateleira-header h2::before { background: linear-gradient(180deg,#61e1ff,#187cff,#775dff); box-shadow: 0 0 12px rgba(39,166,255,.65); }
+.ver-mais { color: #75d8ff; }
+.game-card {
+  background: linear-gradient(155deg, rgba(15,42,75,.98), rgba(5,17,37,.98));
+  border: 1px solid rgba(111,190,255,.18);
+  border-radius: 11px;
+  box-shadow: 0 9px 24px rgba(0,0,0,.28);
+}
+.game-card:hover, .game-card:focus {
+  border-color: rgba(91,211,255,.82);
+  box-shadow: 0 14px 32px rgba(0,123,255,.25), 0 0 18px rgba(51,180,255,.12);
+}
+.cover-wrapper { background: #06152c; }
+.game-info { background: linear-gradient(180deg, rgba(13,37,66,.96), rgba(5,17,35,.98)); }
+.download-btn {
+  background: linear-gradient(100deg, rgba(0,123,255,.13), rgba(55,198,255,.12));
+  border-color: rgba(94,198,255,.24);
+  color: #8be1ff;
+}
+.game-card:hover .download-btn { background: linear-gradient(100deg,#0879ed,#20c5ef); color: #031226; }
+#resultados-busca { position: relative; z-index: 1; }
+.hub-footer {
+  background: rgba(2,8,21,.82);
+  border-top: 1px solid rgba(91,190,255,.18);
+  backdrop-filter: blur(18px);
+}
+.footer-info { border-top-color: rgba(91,190,255,.15); }
+.loading { text-shadow: 0 0 16px rgba(68,194,255,.5); }
+@media (max-width: 800px) {
+  .hub-header { background: rgba(3,10,26,.94); }
+  .prateleira { padding: 14px 12px 6px; border-radius: 12px; }
+  .hub-main { padding-left: 16px; padding-right: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none; }
+  * { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
