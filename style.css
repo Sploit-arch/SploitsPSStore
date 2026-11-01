@@ -572,8 +572,7 @@ body::after {
     radial-gradient(ellipse at 85% 72%, rgba(97,75,255,.13), transparent 40%),
     linear-gradient(90deg, rgba(1,7,20,.18), transparent 50%, rgba(1,7,20,.2));
 }
-@keyframes xmbFloat {
-  from { transform: scale(1.02) translate3d(-.5%, 0, 0); }
+@keyframes xmbFloat { from { transform: scale(1.02) translate3d(-.5%, 0, 0); } to { transform: scale(1.09) translate3d(.8%, -1%, 0); } }
   to { transform: scale(1.09) translate3d(.8%, -1%, 0); }
 }
 .hub-header {
@@ -656,4 +655,19 @@ body::after {
 @media (prefers-reduced-motion: reduce) {
   body::before { animation: none; }
   * { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+/* Keep the XMB background gently drifting; the SVG ribbons animate independently. */
+body::before {
+  background-size: 112% 112%;
+  animation: xmbAmbientDrift 34s ease-in-out infinite alternate;
+  will-change: transform, background-position;
+}
+@keyframes xmbAmbientDrift {
+  0%   { transform: scale(1.02) translate3d(-.4%, .2%, 0); background-position: 48% 50%; }
+  50%  { transform: scale(1.06) translate3d(.3%, -.3%, 0); background-position: 53% 47%; }
+  100% { transform: scale(1.10) translate3d(.7%, -.7%, 0); background-position: 57% 44%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none !important; }
 }
