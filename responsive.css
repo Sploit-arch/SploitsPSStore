@@ -1,0 +1,256 @@
+/* =====================================================
+   Sploit's PS Store - responsive.css (Mobile First)
+   ===================================================== */
+
+/* REGRAS GERAIS DO MOBILE */
+@media (max-width: 800px) {
+    /* --- HEADER --- */
+    .hub-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        height: 65px;
+        background-color: var(--bg-header);
+        position: sticky;
+        top: 0;
+        z-index: 900;
+    }
+
+    .logo { font-size: 1.4em; margin: 0; font-weight: 900; }
+    .hub-header > .header-actions { display: none; }
+
+    /* ESCONDE O MENU ORIGINAL (NÃO TOCA NELE) */
+    .nav-plataformas { display: none !important; }
+
+    /* --- BOTÃO 3 BARRAS --- */
+    .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 28px;
+        height: 22px;
+        background: transparent;
+        border: none;
+        z-index: 1000;
+        padding: 0;
+    }
+    .mobile-menu-btn span {
+        width: 100%;
+        height: 2.5px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    /* =========================================
+       O NOVO MENU MOBILE (Criado via JS)
+       ========================================= */
+    .mobile-menu-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #0b0e14;
+        padding: 20px;
+        z-index: 999;
+        transition: right 0.3s ease-in-out;
+        overflow-y: auto;
+        box-sizing: border-box;
+        gap: 15px;
+    }
+
+    .mobile-menu-overlay.open {
+        right: 0;
+    }
+
+    /* Cabeçalho do Menu */
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .menu-logo { font-size: 1.3em; font-weight: 900; color: white; letter-spacing: 1px; }
+    .mobile-close-btn {
+        background: rgba(255,255,255,0.1); border: none; color: white;
+        font-size: 1.2em; width: 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 50%;
+    }
+
+    /* Quadrados (PC, PS5, PS4, PS3) */
+    .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .menu-grid a {
+        height: 65px;
+        background: #1c2e4a;
+        border-radius: 12px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1.1em; font-weight: bold; color: white;
+        text-decoration: none;
+    }
+
+    /* Lista (PS2, PSP, XBOX, etc) */
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-list a {
+        height: 55px;
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        display: flex; align-items: center;
+        padding-left: 15px;
+        font-size: 1em; font-weight: 600; color: #c6d4df;
+        text-decoration: none;
+    }
+
+    /* Botões de Ação */
+    .menu-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .menu-actions .btn-desbloquear {
+        display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #ff4d5e, #d90429); color: white;
+        height: 60px; border-radius: 12px; font-weight: bold;
+        font-size: 1.1em; text-decoration: none;
+    }
+    .menu-actions .btn-discord {
+        display: flex; align-items: center; justify-content: center;
+        background: #5865F2; color: white;
+        height: 60px; border-radius: 12px; font-weight: bold;
+        font-size: 1.1em; text-decoration: none; gap: 8px;
+    }
+
+    /* =========================================
+       AJUSTES DO CONTEÚDO (HOME / LOJA)
+       ========================================= */
+    .hub-main { padding: 20px 15px; }
+    
+    .search-input {
+        padding: 14px 15px 14px 45px; font-size: 1em; border-radius: 8px;
+        background-color: #151b24; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .search-icon { left: 18px; color: #8f98a0; }
+    
+    .prateleira-header { align-items: center; border-bottom: none; margin-bottom: 15px; }
+    .prateleira-header h2 { font-size: 1.3em; white-space: nowrap; }
+    .ver-mais { font-size: 0.85em; }
+    
+    .scroll-horizontal { gap: 12px; padding-top: 5px; padding-bottom: 15px; }
+    .game-card { min-width: 140px; max-width: 140px; border-radius: 12px; border: none; }
+    .cover-wrapper { border-radius: 12px; aspect-ratio: 3 / 4; }
+    .game-title { font-size: 0.9em; text-align: center; -webkit-line-clamp: 1; font-weight: bold; }
+    .download-btn { display: none; }
+
+    /* Catalogue */
+    .catalogo-header { flex-direction: column; align-items: stretch; gap: 10px; }
+    .catalogo-header h2 { font-size: 1.3em !important; }
+    .btn-toggle { width: 100%; padding: 12px; border-radius: 8px; background-color: #151b24; font-weight: bold; }
+    
+    .loja-container.grid-view { display: flex; flex-direction: column; gap: 12px; }
+    .loja-container.grid-view .game-card {
+        flex-direction: row; min-width: 100%; max-width: 100%; height: 90px;
+        background-color: #151b24; border-radius: 8px; border: none;
+    }
+    .loja-container.grid-view .cover-wrapper { width: 75px; min-width: 75px; height: 100%; border-radius: 8px 0 0 8px; aspect-ratio: auto; }
+    .loja-container.grid-view .game-info { flex-direction: row; align-items: center; justify-content: space-between; padding: 0 15px; width: 100%; }
+    .loja-container.grid-view .game-title { font-size: 0.95em; text-align: left; -webkit-line-clamp: 2; margin-bottom: 0; }
+    .loja-container.grid-view .download-btn {
+        display: flex; width: 90px; min-width: 90px; padding: 10px 5px; font-size: 0.75em;
+        border-radius: 8px; background: rgba(102, 192, 244, 0.1); border: 1px solid rgba(102, 192, 244, 0.3);
+    }
+}
+
+/* =========================================
+   FOOTER RESPONSIVO (MOBILE)
+   ========================================= */
+/* =========================================
+   FOOTER RESPONSIVO (MOBILE) - CORRIGIDO
+   ========================================= */
+@media (max-width: 800px) {
+    .hub-footer {
+        padding: 30px 15px 25px 15px;
+        margin-top: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        font-size: 1.3em;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+
+    /* Transforma a lista de links em um Grid de 2 colunas */
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colunas perfeitas */
+        gap: 10px;
+        width: 100%;
+        max-width: 400px; /* Não deixa espalhar demais em tablets */
+        margin: 0 auto;
+    }
+
+    /* Estilo dos botões do footer */
+    .footer-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 12px 10px;
+        border-radius: 8px;
+        font-size: 0.85em;
+        height: auto; /* Remove altura fixa */
+        margin: 0; /* Remove margens que causavam o vazamento */
+        box-sizing: border-box;
+    }
+
+    /* Ajuste para telas muito pequenas (1 coluna) */
+    @media (max-width: 400px) {
+        .footer-links {
+            grid-template-columns: 1fr; /* 1 coluna */
+        }
+    }
+
+    .footer-info {
+        padding-top: 20px;
+        gap: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-info p {
+        font-size: 0.8em;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .footer-info p:first-child {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://pkg-zone.com/download/ps4/ZZZZ00002/latest": {
+      "title_id": "ZZZZ00002",
+      "region": "USA",
+      "name": "mGBA (Game Boy Advance)",
+      "size": 12345678,
+      "version": "1.00",
+      "release": "07-01-2025",
+      "min_fw": "5.05",
+      "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDcxc8ayMHqGw546sawgaeLCkV_vgx5XTdadEHctXAg&s=10"
+    }
+  }
+}

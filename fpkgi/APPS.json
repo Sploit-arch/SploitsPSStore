@@ -1,0 +1,74 @@
+{
+  "DATA": {
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/FPKGi_v1.10.0-release.pkg": {
+      "title_id": "LAPY20001",
+      "region": "APPS",
+      "name": "FPKGi - Loja Homebrew",
+      "size": 89653248,
+      "version": "1.10.0",
+      "release": "2024",
+      "min_fw": "5.05",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/refs/heads/main/src/assets/fpkgi.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/PS4-Xplorer.pkg": {
+      "title_id": "LAPY20009",
+      "region": "APPS",
+      "name": "PS4-Xplorer 2.0",
+      "size": 66904064,
+      "version": "2.08",
+      "release": "2024",
+      "min_fw": "4.55",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/refs/heads/main/src/assets/ps4xplorer.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Icon-Mask.pkg": {
+      "title_id": "LAPY20007",
+      "region": "APPS",
+      "name": "Icon Mask",
+      "size": 74040000,
+      "version": "1.16",
+      "release": "2024",
+      "min_fw": "5.05",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/main/src/assets/Icon-Mask.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Itemzflow-Game-Manager.pkg": {
+      "title_id": "ITEM00001",
+      "region": "APPS",
+      "name": "Itemzflow Game Manager",
+      "size": 27120000,
+      "version": "1.08",
+      "release": "2024",
+      "min_fw": "5.05",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/main/src/assets/itemzflow.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/PS4-Temperature.pkg": {
+      "title_id": "LAPY20006",
+      "region": "APPS",
+      "name": "PS4 Temperature",
+      "size": 50330000,
+      "version": "1.07",
+      "release": "2024",
+      "min_fw": "5.05",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/refs/heads/main/src/assets/PS4-Temperute.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Youtube.pkg": {
+      "title_id": "CUSA01116",
+      "region": "APPS",
+      "name": "YouTube (NoPSN)",
+      "size": 152000000,
+      "version": "2.32",
+      "release": "2022",
+      "min_fw": "5.05",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/main/src/assets/Youtube.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Netflix.pkg": {
+      "title_id": "CUSA00127",
+      "region": "APPS",
+      "name": "Netflix (NoPSN)",
+      "size": 61060000,
+      "version": "1.53",
+      "release": "2021",
+      "min_fw": "9.00",
+      "cover_url": "https://raw.githubusercontent.com/Zer0G0ld/ps4z/refs/heads/main/src/assets/Netflix.png"
+    }
+  }
+}

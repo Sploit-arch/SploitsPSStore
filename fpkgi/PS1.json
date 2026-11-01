@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://www.web.site/ps1-classic.pkg": {
+      "title_id": "CUSA86184",
+      "region": "USA",
+      "name": "PlayStation Classic",
+      "version": "7.81",
+      "release": "04-27-2015",
+      "size": 26399638440,
+      "min_fw": "13.52",
+      "cover_url": null
+    }
+  }
+}

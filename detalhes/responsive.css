@@ -1,0 +1,333 @@
+/* =====================================================
+   Sploit's PS Store - detalhes/responsive.css (Estilo App Mobile)
+   ===================================================== */
+
+@media (max-width: 800px) {
+    /* =========================================
+       1. HEADER E MENU (Mantido, apenas ajustes finos)
+       ========================================= */
+    .hub-header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 15px 20px; height: 65px; background-color: var(--bg-header);
+        position: sticky; top: 0; z-index: 900; box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+    .logo { font-size: 1.4em; margin: 0; font-weight: 900; white-space: nowrap; }
+    .hub-header > .header-actions { display: none; }
+    .nav-plataformas { display: none !important; }
+
+    .mobile-menu-btn {
+        display: flex; flex-direction: column; justify-content: space-around;
+        width: 28px; height: 22px; background: transparent; border: none; z-index: 1000;
+    }
+    .mobile-menu-btn span { width: 100%; height: 2.5px; background-color: white; border-radius: 2px; }
+
+    /* Menu Mobile Overlay (Mantido) */
+    .mobile-menu-overlay {
+        display: flex; flex-direction: column; position: fixed; top: 0; right: -100%;
+        width: 100%; height: 100vh; background-color: #0b0e14; padding: 20px;
+        z-index: 999; transition: right 0.3s ease-in-out; overflow-y: auto;
+        box-sizing: border-box; gap: 15px;
+    }
+    .mobile-menu-overlay.open { right: 0; }
+    .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .menu-logo { font-size: 1.3em; font-weight: 900; color: white; letter-spacing: 1px; }
+    .mobile-close-btn { background: rgba(255,255,255,0.1); border: none; color: white; font-size: 1.2em; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+    .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .menu-grid a { height: 65px; background: #1c2e4a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; font-weight: bold; color: white; text-decoration: none; }
+    .menu-list { display: flex; flex-direction: column; }
+    .menu-list a { height: 55px; background: transparent; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; padding-left: 15px; font-size: 1em; font-weight: 600; color: #c6d4df; text-decoration: none; }
+    .menu-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+    .menu-actions .btn-desbloquear { display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff4d5e, #d90429); color: white; height: 60px; border-radius: 12px; font-weight: bold; font-size: 1.1em; text-decoration: none; }
+
+    /* =========================================
+       2. CONTEÚDO PRINCIPAL (DETALHES) - O Foco!
+       ========================================= */
+    
+    /* Fundo do Banner */
+    .steam-banner { 
+        height: 220px; 
+        background-position: center top; 
+        box-shadow: inset 0 -100px 80px -20px var(--bg-main);
+        opacity: 0.6; /* Escurece um pouco o fundo para destacar o card */
+    }
+
+    /* Container Principal */
+    .steam-container { 
+        margin-top: -120px; /* Puxa tudo para cima do banner */
+        width: 92%; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 0; /* Remove o gap para colar os blocos */
+        position: relative;
+        z-index: 10;
+    }
+
+    /* CABEÇALHO DO JOGO (Título e Tags) */
+    .steam-header { 
+        padding: 20px 20px 15px 20px; 
+        border-radius: 16px 16px 0 0; /* Arredonda só o topo */
+        background: #151b24; 
+        border: 1px solid rgba(255,255,255,0.05);
+        border-bottom: none;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+    
+    .steam-header h1 { 
+        font-size: 1.6em; 
+        line-height: 1.2; 
+        margin: 0 0 15px 0; 
+        color: white;
+        font-weight: 800;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .steam-tags { 
+        justify-content: center; 
+        gap: 8px; 
+    }
+    
+    .steam-tag { 
+        font-size: 0.65em; 
+        padding: 4px 10px; 
+        border-radius: 20px; /* Pílulas */
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.1);
+        color: var(--text-light);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    /* CORPO (Capa + Info) */
+    .steam-content { 
+        display: flex; 
+        flex-direction: column; 
+        background: #151b24;
+        border-radius: 0 0 16px 16px; /* Arredonda só a base */
+        border: 1px solid rgba(255,255,255,0.05);
+        border-top: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        overflow: hidden; /* Para a imagem não sair do card */
+    }
+
+    /* Imagem de Capa (Destaque) */
+    .steam-cover-col { 
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+    
+    .steam-cover-img { 
+        width: 75%; /* Capa grande e imponente */
+        max-width: 260px;
+        border-radius: 12px; 
+        border: 2px solid rgba(255,255,255,0.1); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
+        transform: translateY(-5px); /* Leve destaque */
+    }
+
+    /* Bloco de Informações */
+    .steam-info-col { 
+        width: 100%; 
+        padding: 20px; 
+        box-sizing: border-box;
+        background: transparent; /* Fundo já é do container pai */
+        border: none;
+        box-shadow: none;
+    }
+    
+    /* Descrição */
+    .steam-description { 
+        font-size: 0.95em; 
+        line-height: 1.6;
+        text-align: center; 
+        margin: 0 0 25px 0; 
+        color: #b8c7d4;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* Lista de Metadados (ID, FW, Tamanho) - Estilo Cartões */
+    .steam-meta-list { 
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Duas colunas */
+        gap: 12px;
+        padding: 0; 
+        margin: 0 0 25px 0; 
+    }
+    
+    .steam-meta-list li { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 12px 10px; 
+        margin: 0; 
+        background: rgba(0,0,0,0.3);
+        border: 1px solid rgba(255,255,255,0.05);
+        border-radius: 10px;
+    }
+
+    /* O ID do sistema ocupa a linha toda se for muito grande */
+    .steam-meta-list li:nth-child(1) {
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 15px;
+    }
+
+    .steam-meta-list li span:first-child { 
+        font-size: 0.7em; 
+        color: var(--text-muted); 
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+        font-weight: 700;
+    }
+    
+    .steam-meta-list li span:last-child { 
+        font-size: 1em; 
+        color: var(--steam-blue); 
+        font-weight: 700; 
+        text-align: center;
+        word-break: break-all; 
+    }
+
+    /* Botões de Ação */
+        /* --- CORREÇÃO DOS BOTÕES DE AÇÃO (DOWNLOAD E VOLTAR) --- */
+    .steam-actions { 
+        display: flex;
+        flex-direction: column; 
+        gap: 12px; 
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    /* Força os botões a terem um tamanho fixo e bonito */
+    .btn-steam-green, 
+    .btn-steam-blue { 
+        flex-grow: 0 !important; /* Impede o botão de esticar e quebrar o layout */
+        flex-shrink: 0 !important;
+        width: 100%; 
+        height: 55px; /* Altura ideal para toque no celular */
+        padding: 0 20px; 
+        font-size: 1.05em; 
+        border-radius: 12px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    /* Ajuste fino do botão verde (Download) */
+    .btn-steam-green {
+        background: linear-gradient(135deg, #4c6b22, #8bc34a);
+        box-shadow: 0 6px 15px rgba(139, 195, 74, 0.2);
+        font-weight: 800;
+        border: none;
+    }
+    
+    /* Ajuste fino do botão azul (Back) */
+    .btn-steam-blue {
+        background: rgba(102, 192, 244, 0.08);
+        border: 1px solid rgba(102, 192, 244, 0.2);
+        font-weight: 600;
+        color: var(--steam-blue);
+    }
+
+    /* Efeito de "apertar" o botão no celular */
+    .btn-steam-green:active, 
+    .btn-steam-blue:active {
+        transform: scale(0.96); /* Dá a sensação de clique */
+        opacity: 0.9;
+    }
+    /* =========================================
+       3. DLCs E UPDATES
+       ========================================= */
+    .steam-dlc-section { 
+        margin-top: 30px;
+        padding: 20px;
+        background: #151b24;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .steam-dlc-section h3 { 
+        font-size: 1.1em; 
+        justify-content: center; 
+        color: white;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .steam-dlc-section h4 { 
+        font-size: 0.8em; 
+        margin: 15px 0 10px 0; 
+        text-align: center; 
+        color: var(--text-muted);
+    }
+    
+    .dlc-card { 
+        flex-direction: column; 
+        align-items: stretch; 
+        gap: 12px; 
+        padding: 15px; 
+        border-radius: 12px; 
+        background: rgba(0,0,0,0.2);
+        border: 1px solid rgba(255,255,255,0.05);
+        margin-bottom: 10px;
+    }
+    
+    .dlc-info { width: 100%; padding-right: 0; text-align: left; }
+    .dlc-name { font-size: 0.95em; white-space: normal; max-width: 100%; color: white; font-weight: 600; }
+    .dlc-meta { font-size: 0.8em; margin-top: 4px; display: block; color: var(--text-muted); }
+    
+    .btn-dlc { 
+        width: 100%; 
+        justify-content: center; 
+        padding: 12px; 
+        border-radius: 8px; 
+        font-size: 0.9em;
+        background: rgba(102, 192, 244, 0.1);
+    }
+
+    /* =========================================
+       4. FOOTER
+       ========================================= */
+    .hub-footer { padding: 30px 15px 25px 15px; margin-top: 40px; width: 100%; box-sizing: border-box; }
+    .footer-content { display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; }
+    .footer-logo { font-size: 1.3em; letter-spacing: 2px; margin-bottom: 0; }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .footer-links a {
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 12px 10px; border-radius: 8px; font-size: 0.85em;
+        height: auto; margin: 0; box-sizing: border-box;
+    }
+    
+    @media (max-width: 400px) {
+        .footer-links { grid-template-columns: 1fr; }
+    }
+
+    .footer-info {
+        padding-top: 20px; gap: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        width: 100%; max-width: 400px; margin: 0 auto; text-align: center;
+    }
+    .footer-info p { font-size: 0.8em; line-height: 1.4; margin: 0; }
+    .footer-info p:first-child { font-size: 0.9em; margin-bottom: 5px; }
+}

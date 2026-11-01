@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://pkg-zone.com/download/ps4/PKGI13337/latest": {
+      "title_id": "PKGI13337",
+      "region": "ALL",
+      "name": "FPKGi",
+      "version": "1.10.0",
+      "release": "12-25-2024",
+      "size": "85458944",
+      "min_fw": "4.50+ / PS5",
+      "cover_url": "https://pkg-zone.com/images/PKGI13337/cover.png"
+    }
+  }
+}

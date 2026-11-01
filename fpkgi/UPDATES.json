@@ -1,0 +1,34 @@
+{
+  "DATA": {
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call-of-Duty-Black-Ops-Fix-1.08.pkg": {
+      "title_id": "CUSA57547",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops [Patch Update (v1.08)]",
+      "version": "1.08",
+      "release": "10-27-2011",
+      "size": 123456789,
+      "min_fw": "9.82",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/2992/2992030/produto/402080720/f9dde080bd274e11839f563f920736d6-xadxn70z4x.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call-of-Duty-Black-Ops-II-Fix-1.10.pkg": {
+      "title_id": "CUSA57548",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops II [Patch Update (v1.10)]",
+      "version": "1.10",
+      "release": "10-27-2011",
+      "size": 123456789,
+      "min_fw": "9.82",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/2835/2835417/produto/402172575/ad1c621ca4fb41b0baa377f777315013-16yqavrrf9.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Update_v1_33-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [Update (Patch) v1.33]",
+      "version": "1.33",
+      "release": "10-27-2011",
+      "size": 123456789,
+      "min_fw": "9.82",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    }
+  }
+}

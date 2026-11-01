@@ -1,0 +1,76 @@
+<!--detalhes/detalhes.html-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - Sploit's PS Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="hub-header">
+        <div class="logo" onclick="window.location.href='../index.html'" style="cursor:pointer;">Sploit's PS Store</div>
+        <nav class="nav-plataformas">
+            <a href="../loja.html?p=pc">PC</a>
+            <a href="../loja.html?p=ps5">PS5</a>
+            <a href="../loja.html?p=ps4">PS4</a>
+            <a href="../loja.html?p=ps3">PS3</a>
+            <a href="../loja.html?p=ps2">PS2</a>
+            <a href="../loja.html?p=psp">PSP</a>
+            <a href="../loja.html?p=xbox">XBOX</a>
+            <a href="../loja.html?p=apps">APPS</a>
+            <a href="../loja.html?p=themes">THEMES</a>
+            <a href="../loja.html?p=emulators">EMULATORS</a>
+            <a href="../loja.html?p=dlc">DLCs</a>
+            <a href="../loja.html?p=updates">UPDATES</a>
+        </nav>
+        <div class="header-actions">
+            <a href="../jb.html" class="btn-jb"><i class="fa-solid fa-bolt"></i> Desbloquear</a>
+        </div>
+    </header>
+
+    <!-- Banner de Fundo -->
+    <div id="steam-banner" class="steam-banner"></div>
+
+    <!-- Loading -->
+    <div id="loading" style="text-align: center; padding: 50px; color: #66c0f4; font-size: 1.2em;">Loading...</div>
+
+    <!-- Conteúdo Principal Injetado pelo JS -->
+    <div id="conteudo" class="steam-container" style="display: none;">
+        <!-- Injetado via JS -->
+    </div>
+
+    <!-- Rodapé Adicionado Aqui -->
+    <footer class="hub-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                Sploit's PS Store
+            </div>
+
+            <div class="footer-links">
+                <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="../jb.html"><i class="fa-solid fa-bolt"></i> Desbloqueio</a>
+                <a href="https://discord.gg/seu-link-aqui" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="https://github.com/Zer0G0ld/Sploit's-PS-Store" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+
+            <div class="footer-info">
+                <p>Your Universal Gaming Hub.</p>
+                <p>&copy; 2026 Sploit's PS Store. All rights reserved.</p>
+                <p>We do not host files. All download links are provided by third parties.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../data.js"></script>
+    <script src="script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../menu.js"></script>
+</body>
+
+</html>

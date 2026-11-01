@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://www.web.site/demo.pkg": {
+      "title_id": "CUSA60824",
+      "region": "ASIA",
+      "name": "Demo",
+      "version": "2.04",
+      "release": "04-20-2001",
+      "size": 43951618945,
+      "min_fw": "11.76",
+      "cover_url": null
+    }
+  }
+}

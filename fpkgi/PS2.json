@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://www.web.site/ps2-classic.pkg": {
+      "title_id": "CUSA66434",
+      "region": null,
+      "name": "PlayStation 2 Classic",
+      "version": "4.92",
+      "release": "06-09-2027",
+      "size": 46788851354,
+      "min_fw": "1.89",
+      "cover_url": null
+    }
+  }
+}

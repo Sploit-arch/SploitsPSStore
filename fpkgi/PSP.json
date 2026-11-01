@@ -1,0 +1,14 @@
+{
+  "DATA": {
+    "https://www.web.site/psp-remaster.pkg": {
+      "title_id": "CUSA84661",
+      "region": "USA",
+      "name": "PSP Remaster",
+      "version": "1.90",
+      "release": "04-10-2038",
+      "size": 18097818153,
+      "min_fw": "9.01",
+      "cover_url": null
+    }
+  }
+}

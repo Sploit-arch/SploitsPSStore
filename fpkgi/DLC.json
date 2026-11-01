@@ -1,0 +1,84 @@
+{
+  "DATA": {
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call-of-Duty-Black-Ops-DLC.pkg": {
+      "title_id": "CUSA57547",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops [DLC Pack (Season Pass)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 987654321,
+      "min_fw": "5.95",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/2992/2992030/produto/402080720/f9dde080bd274e11839f563f920736d6-xadxn70z4x.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call-of-Duty-Black-Ops-II-DLC.rar": {
+      "title_id": "CUSA57548",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops II [DLC Pack (Season Pass)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 987654321,
+      "min_fw": "5.95",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/2835/2835417/produto/402172575/ad1c621ca4fb41b0baa377f777315013-16yqavrrf9.png"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Awakening_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: Awakening)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 1550000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Descent_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: Descent)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 831000000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Eclipse_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: Eclipse)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 7280000000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Salvation_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: Salvation)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 12650000000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_The_Giant_Zombies_Bonus_Map_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: The Giant (Zombies Bonus Map)]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 1630000000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Call_of_Duty_Black_Ops_III_Zombies_Chronicles_DLC-CUSA02624.pkg": {
+      "title_id": "CUSA03004",
+      "region": "USA",
+      "name": "Call of Duty: Black Ops III [DLC: Zombies Chronicles]",
+      "version": "1.00",
+      "release": "08-28-2022",
+      "size": 15660000000,
+      "min_fw": "5.95",
+      "cover_url": "https://m.media-amazon.com/images/I/615S2VgX71L._AC_UF1000,1000_QL80_.jpg"
+    }
+  }
+}

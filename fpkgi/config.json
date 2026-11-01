@@ -1,0 +1,45 @@
+{
+  "FILTERING": {
+    "CONTENT": "all",
+    "SORT": {
+      "type": "name",
+      "ascending": true
+    },
+    "REGIONS": [
+      "Asia",
+      "Europe",
+      "Japan",
+      "USA",
+      "APPS"
+    ]
+  },
+  "PREFERENCES": {
+    "DOWNLOADS": {
+      "directDownload": false,
+      "downloadPath": "/user/data/FPKGi/Downloads/",
+      "installAfter": true,
+      "deleteAfter": false,
+      "deleteOnCancel": false
+    },
+    "APPSLICATION": {
+      "background_uri": null,
+      "backgroundMusic": false,
+      "populateViaWeb": true,
+      "enableUpdates": true
+    },
+    "CONTENT_URLS": {
+      "PS1": "https://zer0g0ld.github.io/Sploit's-PS-Store/PS1.json",
+      "PS2": "https://zer0g0ld.github.io/Sploit's-PS-Store/PS2.json",
+      "PSP": "https://zer0g0ld.github.io/Sploit's-PS-Store/PSP.json",
+      "PS5": "https://zer0g0ld.github.io/Sploit's-PS-Store/PS5.json",
+      "games": "https://zer0g0ld.github.io/Sploit's-PS-Store/GAMES.json",
+      "apps": "https://zer0g0ld.github.io/Sploit's-PS-Store/APPSS.json",
+      "updates": "https://zer0g0ld.github.io/Sploit's-PS-Store/UPDATES.json",
+      "DLC": "https://zer0g0ld.github.io/Sploit's-PS-Store/DLC.json",
+      "demos": "https://zer0g0ld.github.io/Sploit's-PS-Store/DEMOS.json",
+      "homebrew": "https://zer0g0ld.github.io/Sploit's-PS-Store/HOMEBREW.json",
+      "emulators": "https://zer0g0ld.github.io/Sploit's-PS-Store/EMULATORS.json",
+      "themes": "https://zer0g0ld.github.io/Sploit's-PS-Store/THEMES.json"
+    }
+  }
+}

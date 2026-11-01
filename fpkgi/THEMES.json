@@ -1,0 +1,34 @@
+{
+  "DATA": {
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Legacy-Dynamic.zip": {
+      "title_id": "CUSA90001",
+      "region": "USA",
+      "name": "Legacy Dynamic [Theme]",
+      "version": "1.00",
+      "release": "01-01-2024",
+      "size": 13841203,
+      "min_fw": "5.05",
+      "cover_url": "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Legacy-Dynamic.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Cube-Field.zip": {
+      "title_id": "CUSA90002",
+      "region": "USA",
+      "name": "Cube Field [Theme]",
+      "version": "1.00",
+      "release": "01-01-2024",
+      "size": 6836715,
+      "min_fw": "5.05",
+      "cover_url": "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Cube-Field.jpg"
+    },
+    "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Shiny-Hold-On-Dynamic-Theme.zip": {
+      "title_id": "CUSA90003",
+      "region": "USA",
+      "name": "Shiny Hold On Dynamic [Theme]",
+      "version": "1.00",
+      "release": "01-01-2024",
+      "size": 16357785,
+      "min_fw": "5.05",
+      "cover_url": "https://huggingface.co/datasets/Zer0G0ld/ps4z/resolve/main/Shiny-Hold-On-Dynamic-Theme.jpg"
+    }
+  }
+}
